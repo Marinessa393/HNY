@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Condiment");
+
+body {
+  margin: 0;
+  font-family: "Condiment", cursive;
+  background-image: url("https://source.unsplash.com/collection/2323178/fireworks/?landscape");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  background: rgba(177, 200, 214, 0.7);
+  width: 480px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 375px;
+  z-index: 1;
+  font-family: "Bilbo Swash Caps", cursive;
+}
+
+#name-canvas {
+  perspective: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.mover {
+  position: absolute;
+  z-index: -1;
+}
+
+img {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 800px;
+  width: 900px;
+  z-index: 2;
+  position: absolute;
+}
+
+.title {
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: 40px;
+  z-index: 2;
+  color: #063f5b;
+}
+
+.wish {
+  font-weight: bold;
+  font-size: 30px;
+  color: #063f5b;
+  margin: 0;
+}
+
+.name {
+  font-size: 30px;
+  float: right;
+  padding-right: 30px;
+  color: #063f5b;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 500px;
+    height: 570px;
+  }
+  .title {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .wish {
+    padding-top: 30px;
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 15px;
+    padding-right: 20px;
+  }
+  .container {
+    width: 300px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 600px) {
+  img {
+    width: 400px;
+    height: 570px;
+  }
+  .title {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  .wish {
+    padding-top: 30px;
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 15px;
+    padding-right: 20px;
+  }
+  .container {
+    width: 210px;
+    height: 270px;
+    background: rgba(177, 200, 214, 0.7);
+  }
+}
